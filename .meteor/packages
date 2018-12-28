@@ -21,3 +21,5 @@ static-html
 accounts-password@1.5.1
 session
 fourseven:scss
+cultofcoders:mocha
+react-meteor-data
