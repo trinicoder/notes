@@ -55,6 +55,6 @@ Signup.propTypes = {
 }
 export default createContainer(() => {
   return {
-    createUser: Accounts.createUser()
+    createUser: Accounts.createUser
   }
 }, Signup);
