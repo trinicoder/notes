@@ -8,6 +8,7 @@ import Signup from '../ui/Signup';
 import Link from '../ui/Dashboard';
 import NotFound from '../ui/NotFound';
 import Login from '../ui/Login';
+import Dashboard from '../ui/Dashboard';
 
 
 const unauthenticatedPages = ['/','/signup'];
@@ -41,7 +42,8 @@ export const routes = (
   <Router history={browserHistory}>
       <Route path="/" component={Login} onEnter={onEnterPublicPage}/>
       <Route path="/signup" component={Signup} onEnter={onEnterPublicPage}/>
-      <Route path="/dashboard" component={Link} onEnter={onEnterPrivatePage}/>
+      <Route path="/dashboard" component={Dashboard} onEnter={onEnterPrivatePage}/>
+      <Route path="/dashboard/:id" component={Dashboard} onEnter={onEnterPrivatePage}/>
       <Route path="*" component={NotFound}/>     
   </Router>
 );
