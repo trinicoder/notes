@@ -19,7 +19,7 @@ export class Editor extends React.Component {
        if (this.props.note) {
         return (
             <div>
-                <input value={this.props.note.title} placeholder="Your title here" onChange={
+                <input value={this.props.note.title} placeholder="Untitled Note" onChange={
                     this.handleTitleChange.bind(this)
                 }></input>
                 <textarea value={this.props.note.body} placeholder="Your note here" onChange={
