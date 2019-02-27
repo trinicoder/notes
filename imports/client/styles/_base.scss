@@ -8,8 +8,10 @@ html {
 }
 
 body {
+    background-color: $body-backgroud-color;
     font-family: Helvetica, Arial, sans-serif;
     font-size: $base-font-size;
+    color: $body-default-color;
 }
 
 h1 {
@@ -23,7 +25,7 @@ h2 {
 }
 
 a {
-    color: black;
+    color: $body-default-color;
 }
 
 p {
