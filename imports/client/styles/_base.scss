@@ -10,7 +10,7 @@ html {
 
 body {
     background-color: $body-backgroud-color;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: $body-default-font-family;
     font-size: $base-font-size;
     color: $body-default-color;
 }
@@ -35,8 +35,11 @@ p {
 
 input[type=text],
 input[type=email],
-input[type=password] {
+input[type=password],
+textarea {
     border: 1px solid $input-border;
+    color: $body-default-color;
+    font-family: $body-default-font-family;
     font-size: $base-font-size;
     margin-bottom: $space;
     padding: $input-spacing;
